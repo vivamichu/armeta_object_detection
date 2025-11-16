@@ -1,10 +1,18 @@
 # Model training and inference
 
-This branch contains the training and inference code using Ultralytics YOLO model.
+Project for training and running Ultralytics YOLO models to detect:
+- qr
+- signature
+- stamp
+- stamp_q
 
-train.ipynb can be used to train the model.
-inference.ipynb can be used to generate resulting json file.
+Key notebooks:
+- train.ipynb: train a model
+- inference.ipynb: convert PDFs to images, run inference, evaluate, and export a single predictions JSON
 
-other .py files are utils
+Web application code lives on the master branch. This branch focuses on model training and offline inference.
 
-## Web app code is on master branch
+## Branches
+- master: web app code
+- this branch: model training and offline inference
+
