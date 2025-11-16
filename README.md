@@ -64,7 +64,7 @@ All backend settings can be overridden via environment variables prefixed with `
 | `DI_STORAGE_DIR` | `storage` | Filesystem path for uploaded PDFs. Mounted to `/data/storage` inside Docker. |
 | `DI_LOG_LEVEL` | `INFO` | Log verbosity across services. |
 | `DI_MODEL_PATH` | `best.pt` | Absolute or relative path to the Ultralytics weights. Swap this to change models. |
-| `DI_MODEL_CONFIDENCE` | `0.35` | Minimum confidence threshold passed to YOLO. |
+| `DI_MODEL_CONFIDENCE` | `0.5` | Minimum confidence threshold passed to YOLO. |
 | `DI_PDF_DPI` | `200` | DPI for pdf2image when rasterizing each page. |
 
 Frontend configuration is minimal—set `VITE_API_BASE_URL` in `frontend/.env` when the API lives elsewhere.

@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     database_url: str = "sqlite:///./app.db"
     log_level: str = "INFO"
     model_path: Path = Path("models/best.pt")
-    model_confidence: float = 0.35
+    model_confidence: float = 0.5
     pdf_dpi: int = 200
 
     model_config = SettingsConfigDict(
